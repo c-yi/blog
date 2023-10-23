@@ -34,16 +34,16 @@ jobs:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
       # - uses: pnpm/action-setup@v2 # Uncomment this if you're using pnpm
       # - uses: oven-sh/setup-bun@v1 # Uncomment this if you're using Bun
-      - name: Setup Node
+      - name: 设置 Node版本
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: npm # or npm / yarn
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Install dependencies
+      - name: 安装依赖
         run: pnpm install # or pnpm install / yarn install / bun install
-      - name: Build with VitePress
+      - name: 使用 VitePress 构建
         run: |
           pnpm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
           touch dist/.nojekyll
