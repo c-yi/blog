@@ -36,14 +36,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: npm # or npm / yarn
+          cache: pnpm # or npm / yarn
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: 安装依赖
-        run: npm install # or pnpm install / yarn install / bun install
+        run: pnpm install # or pnpm install / yarn install / bun install
       - name: 使用 VitePress 构建
         run: |
-          npm run docs:build
+          pnpm run docs:build
           touch dist/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
