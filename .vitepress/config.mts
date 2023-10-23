@@ -3,8 +3,13 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/blog/',
+  outDir:"./dist",
   title: "Blog",
   description: "A VitePress Site",
+  markdown: {
+    lineNumbers: true
+  },
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
