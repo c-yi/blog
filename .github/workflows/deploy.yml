@@ -32,6 +32,9 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
       - name: 设置 Node版本
         uses: actions/setup-node@v3
         with:
