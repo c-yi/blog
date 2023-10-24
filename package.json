@@ -16,6 +16,8 @@
     "vitepress": "1.0.0-rc.23"
   },
   "dependencies": {
+    "highlight.js": "^11.9.0",
+    "less": "^4.2.0",
     "vue": "^3.3.6"
   }
 }

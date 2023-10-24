@@ -1,0 +1,94 @@
+[
+  {
+    "text": "计科基石",
+    "items": [
+      {
+        "text": "数据结构",
+        "link": "/docs/base/dataStructure/"
+      },
+      {
+        "text": "设计模式",
+        "link": "/docs/base/designPatterns/"
+      },
+      {
+        "text": "算法",
+        "link": "/docs/base/algorithm/"
+      },
+      {
+        "text": "网络",
+        "link": "/docs/base/network/"
+      }
+    ]
+  },
+  {
+    "text": "前端",
+    "items": [
+      {
+        "text": "es",
+        "link": "/docs/fronted/es/"
+      },
+      {
+        "text": "react",
+        "link": "/docs/fronted/react/"
+      },
+      {
+        "text": "vue",
+        "link": "/docs/fronted/vue/"
+      }
+    ]
+  },
+  {
+    "text": "工程化",
+    "items": [
+      {
+        "text": "webpack",
+        "link": "/docs/engineering/webpack/"
+      },
+      {
+        "text": "git",
+        "link": "/docs/engineering/git/"
+      },
+      {
+        "text": "linux",
+        "link": "/docs/engineering/linux/"
+      },
+      {
+        "text": "docker",
+        "link": "/docs/engineering/docker/"
+      },
+      {
+        "text": "nginx",
+        "link": "/docs/engineering/nginx/"
+      },
+      {
+        "text": "k8s",
+        "link": "/docs/engineering/k8s/"
+      },
+      {
+        "text": "jenkins",
+        "link": "/docs/engineering/jenkins/"
+      }
+    ]
+  },
+  {
+    "text": "其他",
+    "items": [
+      {
+        "text": "读书笔记",
+        "link": "/docs/other/read/"
+      },
+      {
+        "text": "英语笔记",
+        "link": "/docs/other/english/"
+      },
+      {
+        "text": "随记",
+        "link": "/docs/other/tips/"
+      },
+      {
+        "text": "好玩的",
+        "link": "/docs/other/funny/"
+      }
+    ]
+  }
+]

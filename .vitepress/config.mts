@@ -1,48 +1,34 @@
 import {defineConfig} from 'vitepress'
-import nav from './route/nva.js'
+// @ts-ignore
+import nav from './route/nva.json'
+import sidebar from './route/sideBar.js'
 
-// https://vitepress.dev/reference/site-config
+const vercelPng = `<svg aria-label="Vercel Logo"  style="stroke: none; fill: #000000;"   viewBox="0 0 75 65" height="26"data-testid="dashboard/logo"><path d="M37.59.25l36.95 64H.64l36.95-64z"/></svg>`
+
 export default defineConfig({
     base: '/blog/',
     outDir: "./dist",
+    // srcDir: "../docs/",
     title: "Blog",
-    description: "A VitePress Site",
+    description: "一个博客，记录一路成长",
     markdown: {
-        lineNumbers: true
+        lineNumbers: true,
+        toc: {level: [1, 2, 3, 4, 5]},
     },
     lastUpdated: true,
     themeConfig: {
-        // https://vitepress.dev/reference/default-theme-config
-        nav/*: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/docs/example/markdown-examples' }
-    ]*/,
-
-        sidebar: {
-            '/docs/es/': [
-                {
-                    text: '前端基础',
-                    items: [
-                        {text: '基础', link: '/docs/es/'},
-                        {text: 'ts', link: '/docs/es/typeScript'},
-                    ]
-                }
-            ],
-            '/docs/vue/': [
-                {
-                    text: 'vue 相关知识',
-                    items: [
-                        {text: 'vue', link: '/docs/vue/'},
-                        {text: '生命周期', link: '/docs/vue/lifeCircle'},
-                        {text: '响应式', link: '/docs/vue/reactive'},
-                        {text: 'diff算法', link: '/docs/vue/diff'},
-                    ]
-                }
-            ]
+        nav,
+        sidebar,
+        search: {
+            provider: 'local'
         },
-
+        editLink: {
+            pattern: 'https://github.com/c-yi/blog/edit/main/:path',
+            text: '编辑这个页面'
+        },
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
+            {icon: 'github', link: 'https://github.com/c-yi/blog'},
+            {icon: {svg: vercelPng}, link: 'https://vercel.com/dashboard'}
         ]
     }
 })
