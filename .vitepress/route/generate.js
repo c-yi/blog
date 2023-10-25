@@ -31,7 +31,7 @@ async function generate(con) {
         const isIndex = item === 'index.md' || item === 'README.md'
         const link = isIndex ? redDir : (redDir + item).replace('.md', '')
         let text = isIndex ? "README" : item.replace('.md', '');
-        const res = item.match(/(?<=_).*?(?=.md)/)
+        const res = item.match(/(?<=_).*?(?=.md)/)||item.match(/(?<=\d{2}).*?(?=.md)/)
         if (!isIndex && res) {
             text = res[0]
         }

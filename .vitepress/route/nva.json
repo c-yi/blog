@@ -21,19 +21,28 @@
     ]
   },
   {
+    "text": "后端",
+    "items": [
+      {
+        "text": "java",
+        "link": "/docs/backend/java/"
+      }
+    ]
+  },
+  {
     "text": "前端",
     "items": [
       {
         "text": "es",
-        "link": "/docs/fronted/es/"
+        "link": "/docs/frontEnd/es/"
       },
       {
         "text": "react",
-        "link": "/docs/fronted/react/"
+        "link": "/docs/frontEnd/react/"
       },
       {
         "text": "vue",
-        "link": "/docs/fronted/vue/"
+        "link": "/docs/frontEnd/vue/"
       }
     ]
   },
