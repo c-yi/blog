@@ -18,23 +18,23 @@
 
 ### Type: commit的类型
 
-|   前缀   | 类型                                                   |
-| :------: | :----------------------------------------------------- |
-|   feat   | 新功能、新特性                                         |
-|   fix    | 修改bug                                                |
-|   perf   | 更改代码,以提高性能                                    |
+|    前缀    | 类型                            |
+|:--------:|:------------------------------|
+|   feat   | 新功能、新特性                       |
+|   fix    | 修改bug                         |
+|   perf   | 更改代码,以提高性能                    |
 | refactor | 代码重构 (重构,在不影响代码内部行为、功能下的代码修改) |
-|   docs   | 文档修改                                               |
-|  style   | 代码格式修改,注意不是css修改(例如分号修改)             |
-|   test   | 测试用例新增、修改                                     |
-|  build   | 影响项目构建或依赖项修改                               |
-|  evert   | 影响项目构建或依赖项修改                               |
-|  build   | 影响项目构建或依赖项修改                               |
-|  revert  | 恢复上一次提交                                         |
-|    ci    | 持续集成相关文件修改                                   |
-|  chore   | 其他修改(不在上述类型中的修改                          |
-| release  | 发布新版本                                             |
-| workflow | 工作流相关文件修改                                     |
+|   docs   | 文档修改                          |
+|  style   | 代码格式修改,注意不是css修改(例如分号修改)      |
+|   test   | 测试用例新增、修改                     |
+|  build   | 影响项目构建或依赖项修改                  |
+|  evert   | 影响项目构建或依赖项修改                  |
+|  build   | 影响项目构建或依赖项修改                  |
+|  revert  | 恢复上一次提交                       |
+|    ci    | 持续集成相关文件修改                    |
+|  chore   | 其他修改(不在上述类型中的修改               |
+| release  | 发布新版本                         |
+| workflow | 工作流相关文件修改                     |
 
 ### 修改配置信息
 
@@ -55,10 +55,10 @@ git config --local --unset user.name
 
 # 丢弃更改
 
->  checkout  删除工作区最新的修改数据,已经 `git add .` 加入到暂存区的内容不会被删除
-> 							在工作区起作用,恢复到上一次的暂存区状态
+> checkout 删除工作区最新的修改数据,已经 `git add .` 加入到暂存区的内容不会被删除
+> 在工作区起作用,恢复到上一次的暂存区状态
 >
-> 
+>
 
 ## 丢弃工作区的文件
 
@@ -114,8 +114,6 @@ git commit --amend -m""
 
 # 仓库
 
-
-
 ```bash
 # 查看
 git remote -vv
@@ -126,7 +124,7 @@ git remote add [repository_name]  [repository_address]
 #修改
 ```
 
-## 
+##  
 
 # 分支
 
@@ -162,11 +160,10 @@ git push origin/[remote_branch_name] [local_branch_name]
 > HEAD实际上是一个指针,指向的是当前分支
 > master 指向提交
 > fast forward 快速前进 修改指针的指向
-> 	如果可能 ,合并分支时Git会使用fast-forward模式
-> 	在这种模式下删除分支会丢掉分支信息
-> 	合并时加上 —no-ff 参数 会禁用fast-forward,这样会多出一个commit id
+> 如果可能 ,合并分支时Git会使用fast-forward模式
+> 在这种模式下删除分支会丢掉分支信息
+> 合并时加上 —no-ff 参数 会禁用fast-forward,这样会多出一个commit id
 
-![image-20210731185208107](D:\DOCS\assets\image-20210731185208107.png)
 
 ---
 
@@ -206,8 +203,6 @@ git cherry -v
 + e03fc2b7281fc325204d447facfcd54c99ab6822 fix: 删除分类路由,修复文件导入报错问题
 ```
 
-
-
 # stash
 
 ```bash
@@ -219,8 +214,6 @@ git stash apply #( stash内容并不删除,需要通过 git stash drop stash@{0}
 git stash pop # ( 恢复的同时也将 stash内容删除 )
 git stash apply stash@(0)
 ```
-
-
 
 # Git标签
 
@@ -245,8 +238,6 @@ git tag -d [tag_name]
 git blame [file_name]
 ```
 
-
-
 # diff
 
 ```bash
@@ -257,8 +248,6 @@ git diff HEAD
 # 比较最新提交与暂存区的差别
 git diff --cache
 ```
-
-
 
 # 单词
 
